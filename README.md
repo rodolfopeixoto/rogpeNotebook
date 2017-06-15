@@ -1,24 +1,38 @@
-# README
+# ROGPEnotebook
+Desenvolvimento de uma agenda de contatos para uma empresa.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Respondendo as Questões 0.0.1
+================
 
-Things you may want to cover:
+Sobre esta versão
+---------------------
+O Sistema foi desenvolvido em Rails 5.
+Utilizamos:
+ - Docker
 
-* Ruby version
+Acompanhe as atualizações do projeto
+---------------------
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+ATENÇÃO
+---------------------
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+Configuração inicial
+---------------------
 
-* Deployment instructions
+Caso tenhao o docker, basta clonar o repositório e rodar o docker-compose build && docker-compose up
 
-* ...
+
+Documentação
+---------------------
+Confira a documentação disponível até o momento no repositório provisório [https://github.com/rodolfopeixoto/documentacao](https://github.com/rodolfopeixoto/documentacao).
+
+###Links diretos:
+
+
+Desenvolvimento
+---------------------
+-   [Rodolfo Peixoto](http://www.rodolfopeixoto.com.br/)
