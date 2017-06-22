@@ -10,15 +10,3 @@ Kind.create!([{description: "Amigo"},
              {description: "Contato"},
              {description: "Comercial"}])
 puts 'Gerando os tipos de contato (kinds)... [OK]'
-
-
-puts 'Gerando os tipos de contato (Contacts)...'
-  10.times do |i|
-    Contact.create!(
-         name: Faker::Name.name,
-         email: Faker::Internet.email,
-         kind: Kind.all.sample,
-         rmk: Faker::Lorem.paragraph([1,2,3,4,5].sample)
-    )
-  end
-puts 'Gerando os tipos de contato (Contacts)... [OK]'
