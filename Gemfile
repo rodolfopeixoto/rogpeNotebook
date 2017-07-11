@@ -26,6 +26,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'faker'
 # Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff http://rails-i18n.org
 gem 'rails-i18n', '~> 5.0.0'
+# Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms
+gem 'cocoon'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
