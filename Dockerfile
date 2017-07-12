@@ -20,6 +20,10 @@ RUN source $NVM_DIR/nvm.sh && \
 RUN echo "source ${NVM_DIR}/nvm.sh" > $HOME/.bashrc && \
     source $HOME/.bashrc
 
+
+# Installing the bower
+CMD npm install bower
+
 RUN cd ~
 
 RUN mkdir /rogpeNotebook
