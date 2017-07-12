@@ -47,8 +47,8 @@
 <div id="phones">
   <%= f.fields_for :phones do |phones_forms| %>
     <%= render partial: "phone_fields", locals: { f: phones_forms } %>
-  <% end %>
-
+  <% end %> 
+    <%= link_to_add_association('[Adicionar Telefone]', f, :phones) %>
 </div>
 
 
