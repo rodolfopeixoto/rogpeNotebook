@@ -10,6 +10,9 @@
       kind:
         one: Tipo de Contato
         other: Tipos de Contatos
+      address:
+        one: Endereço
+        other: Endereços
     attributes:
       contact:
         name: Nome

@@ -1,6 +1,5 @@
-<h1>Editing Address</h1>
+<h1><%= "#{t('message.editing')} #{t('activerecord.models.address.one')}" %></h1>
 
-<%= render 'form', address: @address %>
-
-<%= link_to 'Show', @address %> |
-<%= link_to 'Back', addresses_path %>
+<%= render 'form', address: @address %> 
+</br>
+<%= link_to  t('buttons.show'), @address, class: 'waves-effect waves-light btn'  %>
