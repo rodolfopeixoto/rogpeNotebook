@@ -16,6 +16,7 @@
         email: E-mail
         kind: Tipo de Contato
         kind_id: Tipo de Contato
+        rmk: Observação
       address:
         street: Rua
         city: Cidade
@@ -25,3 +26,6 @@
       phone:
         phone: Telefone
         contact_id: Contato
+        contact: Contato
+      kind:
+        description: Descrição

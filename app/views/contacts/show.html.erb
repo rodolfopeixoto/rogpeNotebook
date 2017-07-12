@@ -1,24 +1,24 @@
+<h1><%=  t('activerecord.models.contact.one') %></h1>
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong><%= t('activerecord.attributes.contact.name') %>:</strong>
   <%= @contact.name %>
 </p>
 
 <p>
-  <strong>Email:</strong>
+  <strong><%= t('activerecord.attributes.contact.email') %>:</strong>
   <%= @contact.email %>
 </p>
 
 <p>
-  <strong>Kind:</strong>
-  <%= @contact.kind %>
+  <strong><%= t('activerecord.attributes.contact.description') %>:</strong>
+  <%= @contact.kind.description %>
 </p>
 
 <p>
-  <strong>Rmk:</strong>
+  <strong><%= t('activerecord.attributes.contact.rmk') %>:</strong>
   <%= @contact.rmk %>
-</p>
-
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
+</p> 
+<%= link_to "#{t('buttons.edit')}", edit_contact_path(@contact), class: 'waves-effect waves-light btn' %>
+<%= link_to t('buttons.back'), contacts_path, class: 'waves-effect waves-light btn' %>

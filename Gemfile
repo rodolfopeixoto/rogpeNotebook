@@ -28,6 +28,8 @@ gem 'faker'
 gem 'rails-i18n', '~> 5.0.0'
 # Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms
 gem 'cocoon'
+# Materialize Sass version for Rails Asset Pipeline
+gem 'materialize-sass'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

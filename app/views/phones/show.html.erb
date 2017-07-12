@@ -1,14 +1,15 @@
+<h1><%=  t('activerecord.models.phone.one') %></h1>
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Phone:</strong>
+  <strong><%= t('activerecord.attributes.phone.phone') %></strong>
   <%= @phone.phone %>
 </p>
 
 <p>
-  <strong>Contact:</strong>
-  <%= @phone.contact %>
+  <strong><%= t('activerecord.attributes.phone.contact') %>:</strong>
+  <%= @phone.contact.name %>
 </p>
 
-<%= link_to 'Edit', edit_phone_path(@phone) %> |
-<%= link_to 'Back', phones_path %>
+<%= link_to "#{t('buttons.edit')}", edit_phone_path(@phone), class: 'waves-effect waves-light btn' %>
+<%= link_to t('buttons.back'), phones_path, class: 'waves-effect waves-light btn' %>

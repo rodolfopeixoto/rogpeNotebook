@@ -11,12 +11,13 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="input-field">
     <%= f.label :description %>
     <%= f.text_field :description %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: 'waves-effect waves-light btn' %>
+    <%= link_to t('buttons.back'), kinds_path, class: 'waves-effect waves-light btn' %>
   </div>
 <% end %>

@@ -1,6 +1,5 @@
-<h1>Editing Contact</h1>
+<h1><%= "#{t('message.editing')} #{t('activerecord.models.contact.one')}" %> </h1>
 
 <%= render 'form', contact: @contact %>
 
-<%= link_to 'Show', @contact %> |
-<%= link_to 'Back', contacts_path %>
+<%= link_to t('buttons.show'), @contact, class: 'waves-effect waves-light btn' %>

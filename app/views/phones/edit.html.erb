@@ -1,6 +1,5 @@
-<h1>Editing Phone</h1>
+<h1><%= "#{t('message.editing')} #{t('activerecord.models.phone.one')}" %></h1>
 
 <%= render 'form', phone: @phone %>
-
-<%= link_to 'Show', @phone %> |
-<%= link_to 'Back', phones_path %>
+</br>
+<%= link_to "#{t('buttons.show')}", @phone, class: 'waves-effect waves-light btn' %>

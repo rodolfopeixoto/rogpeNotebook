@@ -1,6 +1,5 @@
-<h1>Editing Kind</h1>
+<h1><%= "#{t('message.editing')} #{t('activerecord.models.kind.one')}" %></h1>
 
 <%= render 'form', kind: @kind %>
-
-<%= link_to 'Show', @kind %> |
-<%= link_to 'Back', kinds_path %>
+</br>
+<%= link_to  t('buttons.show'), @kind, class: 'waves-effect waves-light btn'  %>
