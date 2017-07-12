@@ -28,6 +28,8 @@
   </tbody>
 </table>
 
+ <%= paginate @addresses %>
+
 <br>
 
 <%= link_to "#{t('buttons.new')} #{@addresses.model.model_name.human}", new_address_path, class: 'waves-effect waves-light btn' %>

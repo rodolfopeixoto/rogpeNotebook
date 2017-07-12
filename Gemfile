@@ -30,7 +30,9 @@ gem 'rails-i18n', '~> 5.0.0'
 gem 'cocoon'
 # Materialize Sass version for Rails Asset Pipeline
 gem 'materialize-sass'
-
+# ⚡ A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
+gem 'kaminari'
+gem 'kaminari-i18n'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

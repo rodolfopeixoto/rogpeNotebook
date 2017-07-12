@@ -14,7 +14,7 @@
 
   <tbody>
     <% @contacts.each do |contact| %>
-      <tr>
+      <tr style="background: <%= cycle('#fafafa','#f5f5f5') %>">
         <td><%= contact.name %></td>
         <td><%= contact.email %></td>
         <td><%= contact.kind.description %></td>
@@ -25,6 +25,9 @@
     <% end %>
   </tbody>
 </table>
+ <br>
+ <br>
+ <%= paginate @contacts %>
 
 <br>
 

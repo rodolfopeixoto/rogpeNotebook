@@ -1,7 +1,7 @@
 <%= form_for(contact) do |f| %>
 <% if contact.errors.any? %>
 <div id="error_explanation">
-  <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+  <h2><%= "#{pluralize(contact.errors.count, 'error')} #{t('message.errors')}"%> </h2>
 
   <ul>
     <% contact.errors.full_messages.each do |message| %>
@@ -48,9 +48,9 @@
 
 <div id="phones">
   <%= f.fields_for :phones do |phones_forms| %>
-    <%= render partial: "phone_fields", locals: { f: phones_forms } %>
+  <%= render partial: "phone_fields", locals: { f: phones_forms } %>
   <% end %>
-    <%= link_to_add_association('[Adicionar Telefone]', f, :phones) %>
+  <%= link_to_add_association('[Adicionar Telefone]', f, :phones) %>
 </div>
 
 
