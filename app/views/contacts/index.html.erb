@@ -1,4 +1,7 @@
-<p id="notice"><%= notice %></p>
+<script>
+  $.notify("<% notice %>");
+</script>
+ 
 
 <h1> <%= "#{t('message.listing')} #{@contacts.model.model_name.human(count: @contacts.count)}" %></h1>
 

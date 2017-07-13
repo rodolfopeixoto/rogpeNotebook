@@ -28,7 +28,7 @@ class KindsController < ApplicationController
 
     respond_to do |format|
       if @kind.save
-        format.html { redirect_to @kind, notice: 'Kind was successfully created.' }
+        format.html { redirect_to @kind, notice: I18n.t('messages.create') }
         format.json { render :show, status: :created, location: @kind }
       else
         format.html { render :new }

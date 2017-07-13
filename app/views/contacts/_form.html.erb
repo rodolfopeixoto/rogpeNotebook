@@ -21,7 +21,7 @@
   <%= f.text_field :email %>
 </div>
 
-<div class="input-field">
+<div class="field">
   <%= f.label :kind_id %>
   <br>
   <%= f.collection_select(:kind_id, @kind_options_for_select, :id, :description) %>
