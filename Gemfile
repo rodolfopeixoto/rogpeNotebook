@@ -32,7 +32,7 @@ gem 'cocoon'
 gem 'materialize-sass'
 # ⚡ A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
 gem 'kaminari'
-gem 'kaminari-i18n' 
+gem 'kaminari-i18n'
 gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
@@ -60,6 +60,9 @@ group :development do
   gem 'pry-rails'
 end
 
+group :production do
+  gem 'rails_12factor'
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
