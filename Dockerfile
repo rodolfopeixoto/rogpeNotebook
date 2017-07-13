@@ -1,5 +1,8 @@
 FROM ruby:2.3.3
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev curl git
+
+ENV HOME /root
+
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev curl git nodejs
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 ENV NVM_DIR /usr/local/.nvm
@@ -19,10 +22,6 @@ RUN source $NVM_DIR/nvm.sh && \
 # Add nvm.sh to .bashrc for startup...
 RUN echo "source ${NVM_DIR}/nvm.sh" > $HOME/.bashrc && \
     source $HOME/.bashrc
-
-
-# Installing the bower
-CMD npm install bower
 
 RUN cd ~
 

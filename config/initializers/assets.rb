@@ -21,6 +21,4 @@ Rails.application.config.assets.precompile += %w( addresses.scss
                                                   kinds.js
                                                   main.js
                                                   phones.js
-                                                  alert.js
-                                                  notifyjs/notify.js
-                                                  )
+                                                  alert.js )
